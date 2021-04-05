@@ -1,0 +1,39 @@
+.header {
+	width: 100%;
+	height: 100px;
+	font-family: Myriad-Pro;
+	background-color: white;
+	display: flex;
+}
+
+.header img {
+	width: 70px;
+	height: 70px;
+	margin-top: 15px;
+	margin-left: 10%;
+	pointer-events: none;
+}
+
+.header h1 {
+	margin-left: 10px;
+}
+
+.header p {
+	position: relative;
+	top: 40px;
+	right: 175px;
+}
+
+.header button {
+	width: 200px;
+	height: 50px;
+	font-family: Myriad-Pro;
+	cursor: pointer;
+	background-color: #ffcc00;
+	outline: none;
+	border: none;
+	margin-top: 25px;
+	margin-left: 40%;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+	font-size: 26px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Онлайн калькуляторы">
+	<meta name="keywords" content="Калькулятор">
+	<link rel="shortcut icon" href="image/shortcut.svg" type="image/x-icon">
+	<title>Кредитный калькулятор</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--...-->
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<!--...-->
+	<link rel="stylesheet" type="text/css" href="css/calculator.css">
+	<!--...-->
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<!--...-->
+	<link rel="stylesheet" type="text/css" href="css/registration-form.css">
+</head>
+<body>
+
+	<header class="header">
+		<img src="image/logo.png">
+		<h1>Калькулятор</h1>
+		<p>кредитный калькулятор</p>
+		<button class="registration-link">Регистрация</button>
+	</header>
+
+	<main>
+		
+		<article>
+
+			<section class="calculator">
+				<h2>Подсчет ежемесячного платежа кредита</h2>
+				<div class="calculator-forms">
+					<label for="credit-amount">Сумма кредита:</label>
+				  	<br>
+				  	<input type="text" placeholder="Введите сумму кредита" id="credit-amount" class="credit-amount">
+				  	<br>
+				  	<!--...-->
+				  	<label for="credit-term">Срок кредита:</label>
+				  	<br>
+				  	<input type="text" placeholder="Введите срок кредита" id="credit-term" class="credit-term">
+				  	<br>
+				  	<!--...-->
+				  	<label for="credit-percent">Процентная ставка:</label>
+				  	<br>
+				  	<input type="text" placeholder="Введите ставку кредита" id="credit-percent" class="credit-percent">
+				  	<br>
+				  	<!--...-->
+				  	<button class="count">Подсчитать</button>
+			  	</div>
+			</section>
+
+		</article>
+
+		<article class="registration-form">
+			<img src="image/cross.svg" width="40px" height="40px" class="registration-cross">
+			<section class="forms">
+		  		<label class="form-label" for="name">Имя:</label>
+		  		<br>
+		  		<input type="text" class="form-control registration-name" placeholder="Введите имя" id="name">
+		  		<br>
+		  		<label class="form-label" for="surname">Фамилия:</label>
+		  		<br>
+		  		<input type="text" class="form-control registration-surname" placeholder="Введите фамилию" id="surname">
+		  		<br>	
+		  		<label class="form-label" for="mail">@mail:</label>
+		  		<br>
+		  		<input type="text" class="form-control registration-mail" placeholder="Введите @mail" id="mail">
+		  		<br>
+		  		<label class="form-label" for="password">Пароль:</label>
+		  		<br>
+		  		<input type="text" class="form-control registration-password" placeholder="Введите пароль" id="password">
+		  		<br>
+		  		<button class="registration-button">Регистрация</button> 
+	  		</section>
+		</article>
+
+	</main>
+
+	<footer class="footer">
+		<p>Наши контакты ниже:</p>
+		<hr>
+		<a href="#"><img src="image/social-network/github.svg" alt="гитхаб" width="20px" height="20px"></a>			
+		<a href="#"><img src="image/social-network/instagram.svg" alt="инста" width="20px" height="20px"></a>			
+		<a href="#"><img src="image/social-network/mail.svg" alt="маил" width="20px" height="20px"></a>			
+		<a href="#"><img src="image/social-network/vk.svg" alt="вк" width="20px" height="20px"></a>
+		<a href="#"><img src="image/social-network/whatsapp.svg" alt="ватсапп" width="20px" height="20px"></a>
+	</footer>
+
+	<script type="text/javascript" src="js/registrationPopupFetch.js"></script>
+
+</body>
+</html>	
