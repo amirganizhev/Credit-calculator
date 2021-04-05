@@ -16,3 +16,202 @@ body {
     src: url(../fonts/Myriad-Pro.otf);
 }
 
+/*Шапка сайта*/
+.header {
+	width: 100%;
+	height: 100px;
+	font-family: Myriad-Pro;
+	background-color: white;
+	display: flex;
+}
+
+.header img {
+	width: 70px;
+	height: 70px;
+	margin-top: 15px;
+	margin-left: 10%;
+	pointer-events: none;
+}
+
+.header h1 {
+	margin-left: 10px;
+}
+
+.header p {
+	position: relative;
+	top: 40px;
+	right: 175px;
+}
+
+.header button {
+	width: 200px;
+	height: 50px;
+	font-family: Myriad-Pro;
+	cursor: pointer;
+	background-color: #ffcc00;
+	outline: none;
+	border: none;
+	margin-top: 25px;
+	margin-left: 40%;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+	font-size: 26px;
+}
+
+.header button:hover {
+	box-shadow: 0 6px 12px rgba(0, 0, 0, .2);
+}
+
+/*Калькулятор*/
+.calculator {
+	margin-left: 20%;
+	margin-right: 20%;
+	background-color: white;
+	padding: 5%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	border-radius: 15px;
+}
+
+.calculator h2 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.calculator-forms {
+	width: 100%;
+}
+
+.calculator-forms label {
+	margin-left: 15%;
+}
+
+.calculator-forms input {
+	width: 70%;
+	height: 30px;
+	margin-left: 15%;
+	outline: none;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	font-family: calculator;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.calculator-forms button {
+	width: 70%;
+	height: 50px;
+	margin-left: 15%;
+	margin-top: 30px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-size: 26px;
+	background-color: #ffcc00;
+	font-family: calculator;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+
+.calculator-forms button:hover {
+	box-shadow: 0 6px 12px rgba(0, 0, 0, .2);
+}
+
+/*Форма регистрации*/
+.registration-form {
+    background-color: #141114;
+    position: fixed;
+    width: 40%;
+    height: 470px;
+    top: 10%;
+    left: 30%;
+    border: 3px solid #DCDCDC;
+    box-shadow: 0 0 5px #03e9f4;
+    border-radius: 0px 25px 0px 25px;
+    color: white;
+    display: none;
+}
+
+.registration-cross {
+    cursor: pointer;
+    position: relative;
+    left: -20px;
+    top: -20px;
+    filter: drop-shadow(0 0 5px red);
+}
+
+.registration-cross:hover {
+    filter: drop-shadow(0 0 5px #03e9f4);
+}
+
+.forms {
+    margin-left: 20%;
+}
+
+.form-control {
+    width: 80%;
+    height: 30px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    outline: none;
+    border: none;
+    font-family: calculator;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 2px #03e9f4,
+                0 0 15px #03e9f4,
+                0 0 20px #03e9f4,
+                0 0 500px #03e9f4;
+}
+
+.registration-button {
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 20px;
+    outline: none;
+    background-color: #03e9f4;
+    font-family: calculator;
+    border: none;
+}
+
+.registration-button:hover {
+    box-shadow: 0 0 2px #03e9f4,
+                0 0 15px #03e9f4,
+                0 0 20px #03e9f4,
+                0 0 500px #03e9f4;
+}
+
+/*Футер сайта*/
+.footer {
+	text-align: center;
+	height: 100px;
+	width: 100%;
+	font-family: Myriad-Pro;
+	background-color: white;
+}
+
+.footer p {
+	font-size: 26px;
+	position: relative;
+	top: 10px; 
+}
+
+.footer hr {
+	margin-right: 20%;
+	margin-left: 20%;
+	color: black;
+	position: relative;
+	top: -10px;
+}
+
+.footer a {
+	text-decoration: none;
+	margin-right: 15px;
+	position: relative;
+	bottom: 5px;
+}
+
+
