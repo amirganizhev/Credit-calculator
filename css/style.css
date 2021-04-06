@@ -214,4 +214,129 @@ body {
 	bottom: 5px;
 }
 
+/*Медиа запросы*/
+@media (max-width: 1300px) {
+	.header img {
+		margin-left: 5%;
+	}
+	.header button {
+		margin-left: 35%;
+	}
+	.registration-form {
+        width: 50%;
+        height: 330px;
+        left: 25%;
+        font-size: 15px;
+    }
+    .forms {
+        margin-left: 10%;
+    }   
+    .form-control {
+        width: 90%;
+        height: 20px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .registration-button {
+        height: 30px;
+    }
+}
 
+@media (max-width: 1100px) {
+	.header button {
+		margin-left: 25%;
+	}
+	.calculator {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
+
+@media (max-width: 1000px) {
+	.header button {
+		margin-left: 20%;
+	}
+	.registration-form {
+        width: 70%;
+        left: 15%;
+        height: 320px;
+    }  
+    .form-control {
+        height: 15px;
+    }
+    .registration-button {
+        height: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+	.header button {
+		margin-left: 10%;
+	}
+}
+
+@media (max-width: 770px) {
+	.header button {
+		margin-left: 0%;
+	}
+	.calculator {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}
+
+@media (max-width: 670px) {
+	.header button {
+		margin-left: -10%;
+	}
+}
+
+@media (max-width: 600px) {
+	.header img {
+		margin-left: 1%;
+	}
+	.header button {
+		margin-left: -30%;
+	}
+}
+
+@media (max-width: 600px) {
+	.header h1 {
+		font-size: 26px;
+		margin-top: 25px;
+		margin-right: 0px;
+	}
+	.header p {
+		font-size: 12px;
+		top: 45px;
+		right: 145px;
+	}
+	.header img {
+		margin-left: 1%;
+		width: 50px;
+		height: 50px;
+		margin-top: 25px;
+	}
+	.header button {
+		margin-left: 0%;
+		width: 120px;
+		height: 50px;
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 500px) {
+	.header button {
+		margin-left: -20%;
+	}
+	.calculator {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}
+
+@media (max-width: 400px) {
+	.header button {
+		margin-left: -30%;
+	}
+}
