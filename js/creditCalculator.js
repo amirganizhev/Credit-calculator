@@ -8,13 +8,8 @@ countButton.onclick = () => {
 	let amount = parseInt(creditAmount.value);
 	let term = parseInt(creditTerm.value);
 	let percent = parseInt(creditPercent.value);
-	/*---------------------------------------------*/
-	let summ = amount + (((amount / 100) * percent) * term);
-	alert(summ);
+	let summ = amount + (((amount / 100) * (percent / 12)) * (term * 12));
+	let summMounth = summ / (term * 12);
+	alert("Общая сумма к возврату: " + summ + " рублей");
+	alert("Ежемесячный платеж: " + summMounth + " рублей");
 }
-
-/*
-amount
-term
-percent
-*/
