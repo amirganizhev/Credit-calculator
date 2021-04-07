@@ -1,15 +1,23 @@
-let creditAmount = document.querySelector(".credit-amount");
-let creditTerm = document.querySelector(".credit-term");
-let creditPercent = document.querySelector(".credit-percent");
-
-let countButton = document.querySelector(".count-button");
+/*Формы ввода*/
+const creditAmount = document.querySelector(".credit-amount");
+const creditTerm = document.querySelector(".credit-term");
+const creditPercent = document.querySelector(".credit-percent");
+/*Кнопка подсчета*/
+const countButton = document.querySelector(".count-button");
 
 countButton.onclick = () => {
-	let amount = parseInt(creditAmount.value);
-	let term = parseInt(creditTerm.value);
-	let percent = parseInt(creditPercent.value);
-	let summ = amount + (((amount / 100) * (percent / 12)) * (term * 12));
-	let summMounth = summ / (term * 12);
-	alert("Общая сумма к возврату: " + summ + " рублей");
-	alert("Ежемесячный платеж: " + summMounth + " рублей");
+	/*Очистка форм*/
+	setTimeout(() => creditAmount.value = "", 1000);
+	setTimeout(() => creditTerm.value = "", 1000);
+	setTimeout(() => creditPercent.value = "", 1000);
+	/*Парсинг из строки в число*/
+	const amount = parseInt(creditAmount.value);
+	const term = parseInt(creditTerm.value);
+	const percent = parseInt(creditPercent.value);
+	/*Подсчет общей суммы и ежемесячного платежа*/
+	let totalAmount = amount + (((amount / 100) * (percent / 12)) * (term * 12));
+	let monthlyPayment = totalAmount / (term * 12);
+	/*Вывод результата*/
+	alert("Общая сумма к возврату: " + totalAmount + " рублей");
+	alert("Ежемесячный платеж: " + monthlyPayment + " рублей");
 }
