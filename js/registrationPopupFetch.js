@@ -24,7 +24,6 @@ registrationCross.onclick = () => {
 	clearForm();
 }
 
-/*----------------------------------Fetch-запрос----------------------------------*/
 /*Кнопка отправки формы*/
 const registrationButton = document.querySelector(".registration-button");
 
@@ -56,7 +55,6 @@ registrationButton.onclick = () => {
 		return false;
 	} 
 
-	/*--------------------------------------------------------------------------------*/
 	const params = registrationName.value + ' ' + registrationSurname.value + ' ' + registrationMail.value + ' ' + registrationPassword.value;
 	const url = 'ССЫЛКА_НА_СЕРВЕР';
 
@@ -75,12 +73,10 @@ registrationButton.onclick = () => {
 	.then(response => {
 		console.log('Запрос отправлен');
 	})
-	/*--------------------------------------------------------------------------------*/
 
 	/*Очистка форм*/
 	clearForm(); 
 }
-/*----------------------------------Конец Fetch-запроса----------------------------------*/
 
 /*Очистка форм*/
 function clearForm() {
